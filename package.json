@@ -1,0 +1,22 @@
+{
+  "name": "netlify-badges",
+  "version": "0.0.0-alpha",
+  "description": "badge server for netlify builds",
+  "main": "index.js",
+  "repository": "https://github.com/leonardodino/netlify-badges.git",
+  "author": "Leonardo Dino",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "is-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "sync-glitch-cli": "^2.0.1"
+  }
+}

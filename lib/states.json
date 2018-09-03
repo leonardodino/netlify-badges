@@ -1,0 +1,6 @@
+{
+	"building": {"label": "busy", "color": "yellow"},
+	"ready": {"label": "passing", "color": "brightgreen"},
+	"error": {"label": "failing", "color": "red"},
+	"other": {"label": "unknown", "color": "lightgrey"}
+}
