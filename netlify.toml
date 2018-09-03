@@ -1,3 +1,10 @@
 [build]
   publish = "public"
-  command = "echo done"
+  command = "yarn test"
+
+[context.production]
+  command = "yarn test && yarn deploy"
+
+[context.production.environment]
+  GLITCH_PROJECT_ID = "f801942d-824e-48d5-9bff-1638ccdf9921"
+  GH_REPO = "leonardodino/netlify-badges"
