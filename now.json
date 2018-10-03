@@ -1,0 +1,6 @@
+{
+  "name": "netlify-badges",
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
