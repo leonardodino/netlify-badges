@@ -1,5 +1,6 @@
 {
   "name": "netlify-badges",
+  "alias": "netlify-badges.now.sh",
   "env": {
     "NODE_ENV": "production"
   }
