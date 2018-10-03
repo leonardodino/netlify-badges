@@ -14,7 +14,7 @@ app.get(
 	(req, res, next) => {
 		req.getBuildStatus = () => getBuildStatus({
 			slug: req.params.filename.replace(/\.svg$/, ''),
-			branch: req.query.branch || 'master',
+			branch: req.query.branch,
 		})
 		next()
 	},
