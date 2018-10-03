@@ -17,4 +17,16 @@ describe('should return unknown badge on private site', () => {
 			})
 	)
 
+	test('GET xml request', () => {
+		api.get('/kunst.xml')
+			.expect(404)
+			.expect(({body}) => {
+				if(/<\/Projects>/.test(body)){
+					throw new Error('body mustn\'t contains Projects root')
+				}
+				if(!/<Project/.test(body)){
+					throw new Error('body mustn\'t contains the project')
+				}
+			})
+	})
 })

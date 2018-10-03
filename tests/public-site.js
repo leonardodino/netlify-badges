@@ -17,4 +17,18 @@ describe('should return status badge on public site', () => {
 			})
 	})
 
+	test('GET xml request', () => {
+		api.get('/badges.xml')
+			.expect(200)
+			.expect('Content-Type', /xml/)
+			.expect(({body}) => {
+				if(!/<\/Projects>/.test(body)){
+					throw new Error('body doens\'t contains Projects root')
+				}
+				if(!/<Project/.test(body)){
+					throw new Error('body doens\'t contains the project')
+				}
+			})
+	})
+
 })
