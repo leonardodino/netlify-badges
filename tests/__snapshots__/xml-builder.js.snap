@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getProjectXML 1`] = `<Projects><Project /></Projects>`;
+
+exports[`getProjectXML 2`] = `<Projects><Project key="value"/></Projects>`;
+
+exports[`getProjectXML 3`] = `<Projects><Project key="value &quot;with quotes&quot;"/></Projects>`;
